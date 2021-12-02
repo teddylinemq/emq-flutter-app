@@ -22,7 +22,7 @@ struct ContentView: View {
         VStack{
             Button("Welcome to Flutter") {
                 showingFlutter = true
-            }
+            }.buttonStyle(.bordered)
         }.sheet(isPresented: $showingFlutter) {
             FlutterPage()
         }
