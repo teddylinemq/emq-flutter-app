@@ -1,0 +1,13 @@
+dependencyResolutionManagement {
+    String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven { url '/Users/teddylin/AndroidStudioProjects/FlutterApp/flutter_ui/build/host/outputs/repo' }
+        maven { url "$storageUrl/download.flutter.io" }
+    }
+}
+rootProject.name = "Android"
+include ':app'
