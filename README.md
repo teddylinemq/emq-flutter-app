@@ -2,7 +2,7 @@
 Add flutter UI to existing App
 
 # Android setup
-1. Update the folder path of `flutterRepoSrc` in `setting.gradles`
+1. Update the folder path of `flutterRepoSrc` in `Android.setting.gradles`
 2. Run gradle sync and build app
 
 # iOS setup
